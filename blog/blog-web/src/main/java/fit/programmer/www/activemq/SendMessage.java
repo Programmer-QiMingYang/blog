@@ -10,8 +10,8 @@ import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
 
 public class SendMessage {
-	private static String accessKeyId = "你的accessKeyId";//你的accessKeyId,参考本文档步骤2
-	private static String accessKeySecret = "你的accessKeySecret";//你的accessKeySecret，参考本文档步骤2
+	private static String accessKeyId = "你的accessKeyId";
+	private static String accessKeySecret = "你的accessKeySecret";
 	private static String setSignName = "你的短信签名名称";
 	private static String dayutemplateCode = "你的短信模板CODE";
 
@@ -22,7 +22,7 @@ public class SendMessage {
 		//初始化ascClient需要的几个参数
 		final String product = "Dysmsapi";//短信API产品名称
 		final String domain = "dysmsapi.aliyuncs.com";//短信API产品域名
-		//替换成你的AK
+		//替换自己的AK
 		//初始化ascClient,暂时不支持多region
 		IClientProfile profile = DefaultProfile.getProfile("cn-hangzhou", accessKeyId,
 				accessKeySecret);
